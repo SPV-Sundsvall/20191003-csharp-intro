@@ -29,12 +29,12 @@ namespace CalcApp.GUI
             //visa svaret i listboxen
             //hmm..hur kommer jag nu vidare??
 
-
+            string op = ((Button)sender).Text;
             int x = int.Parse(textBox1.Text);
             int y = int.Parse(textBox2.Text);
             int answer = calc.Add(x, y);
 
-            ShowResult(x, y, answer, "+");
+            ShowResult(x, y, answer, op);
         }
 
         private void ShowResult(int x, int y, int answer, string operation)
@@ -53,16 +53,5 @@ namespace CalcApp.GUI
         }
     }
 
-    public class CalculatorEngine
-    {
-        public int Add(int number1, int number2)
-        {
-            return number1 + number2;
-        }
-
-        public int Sub(int number1, int number2)
-        {
-            return number1 - number2;
-        }
-    }
+   
 }
