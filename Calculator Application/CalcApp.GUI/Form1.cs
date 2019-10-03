@@ -34,6 +34,11 @@ namespace CalcApp.GUI
             int y = int.Parse(textBox2.Text);
             int answer = calc.Add(x, y);
 
+            ShowResult(x, y, answer);
+        }
+
+        private void ShowResult(int x, int y, int answer)
+        {
             listBox1.Items.Add(string.Format("{0} + {1} = {2}", x, y, answer));
         }
 
@@ -43,7 +48,7 @@ namespace CalcApp.GUI
             int y = int.Parse(textBox2.Text);
             int answer = calc.Sub(x, y);
 
-            listBox1.Items.Add(string.Format("{0} - {1} = {2}", x, y, answer));
+            ShowResult(x,y,answer);
         }
     }
 
