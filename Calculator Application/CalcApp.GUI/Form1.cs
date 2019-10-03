@@ -34,21 +34,22 @@ namespace CalcApp.GUI
             int y = int.Parse(textBox2.Text);
             int answer = calc.Add(x, y);
 
-            ShowResult(x, y, answer);
+            ShowResult(x, y, answer, "+");
         }
 
-        private void ShowResult(int x, int y, int answer)
+        private void ShowResult(int x, int y, int answer, string operation)
         {
-            listBox1.Items.Add(string.Format("{0} + {1} = {2}", x, y, answer));
+            listBox1.Items.Add(string.Format("{0} {3} {1} = {2}", x, y, answer, operation));
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            string op = ((Button)sender).Text;
             int x = int.Parse(textBox1.Text);
             int y = int.Parse(textBox2.Text);
             int answer = calc.Sub(x, y);
 
-            ShowResult(x,y,answer);
+            ShowResult(x,y,answer, op);
         }
     }
 
