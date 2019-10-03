@@ -26,18 +26,13 @@ namespace CalcApp.GUI
             //visa svaret i listboxen
             //hmm..hur kommer jag nu vidare??
 
-            CalculatorEngine calc;
-            calc = new CalculatorEngine();
+            CalculatorEngine calc = new CalculatorEngine();
 
-            int x;
-            int y;
-            x = int.Parse(textBox1.Text);
-            y = int.Parse(textBox2.Text);
+            int x = int.Parse(textBox1.Text);
+            int y = int.Parse(textBox2.Text);
+            int answer = calc.Add(x, y);
 
-            int answer;
-            answer = calc.Add(x, y);
-
-            listBox1.Items.Add(answer);
+            listBox1.Items.Add(string.Format("{0} + {1} = {2}", x, y, answer));
         }
     }
 
