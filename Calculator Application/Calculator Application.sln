@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcApp.GUI", "CalcApp.GUI\CalcApp.GUI.csproj", "{15E7387C-FD02-45F9-89D6-3F0E8588E6B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcApp.BusinessLogic", "CalcApp.BusinessLogic\CalcApp.BusinessLogic.csproj", "{50CCB8F6-9D26-4A7F-9267-F0B39830481C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{15E7387C-FD02-45F9-89D6-3F0E8588E6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15E7387C-FD02-45F9-89D6-3F0E8588E6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15E7387C-FD02-45F9-89D6-3F0E8588E6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50CCB8F6-9D26-4A7F-9267-F0B39830481C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CCB8F6-9D26-4A7F-9267-F0B39830481C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CCB8F6-9D26-4A7F-9267-F0B39830481C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CCB8F6-9D26-4A7F-9267-F0B39830481C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
