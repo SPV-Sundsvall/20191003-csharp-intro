@@ -12,11 +12,14 @@ namespace CalcApp.GUI
 {
     public partial class Form1 : Form
     {
+        CalculatorEngine calc = new CalculatorEngine();
+
         public Form1()
         {
             InitializeComponent();
 
             button1.Text = "+";
+            button2.Text = "-";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -26,13 +29,21 @@ namespace CalcApp.GUI
             //visa svaret i listboxen
             //hmm..hur kommer jag nu vidare??
 
-            CalculatorEngine calc = new CalculatorEngine();
 
             int x = int.Parse(textBox1.Text);
             int y = int.Parse(textBox2.Text);
             int answer = calc.Add(x, y);
 
             listBox1.Items.Add(string.Format("{0} + {1} = {2}", x, y, answer));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int x = int.Parse(textBox1.Text);
+            int y = int.Parse(textBox2.Text);
+            int answer = calc.Sub(x, y);
+
+            listBox1.Items.Add(string.Format("{0} - {1} = {2}", x, y, answer));
         }
     }
 
@@ -41,6 +52,11 @@ namespace CalcApp.GUI
         public int Add(int number1, int number2)
         {
             return number1 + number2;
+        }
+
+        public int Sub(int number1, int number2)
+        {
+            return number1 - number2;
         }
     }
 }
