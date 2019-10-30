@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalcApp.GUI
+namespace CalcApp.BusinessLogic
 {
     public class CalculatorEngine
     {
